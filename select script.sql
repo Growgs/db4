@@ -4,6 +4,7 @@ SELECT g.genre_name, count(artist_name) FROM artist a
 JOIN genre_artist ga ON a.id = ga.artist_id 
 JOIN genre g ON g.id = ga.genre_id  
 GROUP BY genre_name;
+
 --2. количество треков, вошедших в альбомы 2019-2020 годов
 
 SELECT count(track_name) FROM track t
